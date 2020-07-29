@@ -2,5 +2,7 @@
     "appService.zipIgnorePattern": [
         "node_modules{,/**}",
         ".vscode{,/**}"
-    ]
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/4d084a92-7cfb-43bc-a6f9-ed06edd16511/resourceGroups/NPR-daajao/providers/Microsoft.Web/sites/birthday-wishes1",
+    "appService.deploySubpath": "."
 }
