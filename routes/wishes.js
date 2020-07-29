@@ -2,11 +2,16 @@ var express = require('express');
 var router = express.Router();
 const Wish = require('../models/wishes');
 
+
 /* GET users listing. */
 router.get('/form', function(req, res, next) {
     res.render('index', { person_name: req.query.person_name })
 });
 
+//show user the form
+router.get('/completed', function(req, res, next) {
+    res.render('completedCard')
+});
 
 router.get('/show', function(req, res, next) {
     Wish.find({}, function(err, wishes) {
@@ -23,6 +28,7 @@ router.get('/show', function(req, res, next) {
 
 router.post('/submit', function(req, res, next) {
 
+    /*
     //Use the name of the input field (i.e. "background_image") to retrieve the uploaded file
     let image = req.files.background_image;
     let fileName = Date.now() + image.name;
@@ -30,11 +36,14 @@ router.post('/submit', function(req, res, next) {
     //Use the mv() method to place the file in upload directory (i.e. "uploads")
     image.mv('./uploads/' + fileName);
 
-
+*/
     const person_name = req.body.person_name;
     const audio_url = req.body.audio_url;
-    const image_url = "./uploads/" + fileName;
+    //const image_url = "./uploads/" + fileName;
+    const image_url = req.body.background_image;
     const wishes = [req.body.wish1, req.body.wish2, req.body.wish3, req.body.wish4, req.body.wish5, req.body.wish6, req.body.wish7]
+
+    console.log("YOOOOO" + req.body.audio_url)
 
 
     var newWish = new Wish({

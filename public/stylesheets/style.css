@@ -163,8 +163,8 @@ footer {
 }
 
 .photo-area {
-    background-color: #d6f0fd;
-    border-radius: 10px;
+    background-color: rgba(219, 219, 219, 0.705);
+    border-radius: 30px;
 }
 
 .test-wrapper {

@@ -4,10 +4,6 @@
 
     <body class="container">
 
-        <audio controls>
-        <source src="/audio/BirthdaySong.mp3" type="audio/mpeg">
-    </audio>
-
         <header class="masthead">
             <h1>BirthDay Wishes Bot</h1>
         </header>
@@ -20,15 +16,34 @@
             <!-- .intro -->
 
             <section class="container">
-
+                <br/>
                 <div class="center">
                     <h5>This card will be sent 12:05:00am on the celebrants birthday</h5>
                 </div>
 
+                <br/>
+                <div class="row">
+                    <div class="col-md-2 center">
+                        <i id="prev-song" class="fa fa-arrow-circle-o-left fa-4x" aria-hidden="true"></i> <br/>Previous song
+                    </div>
+                    <div class="col-md-8 center">
+                        <p>Choose a song:</p>
+                        <audio id="songholder" controls>
+                            <source id="song" src="/audio/BirthDaySong.mp3" type="audio/mpeg">
+                        </audio>
+                        
+                    </div>
+                    <div class="col-md-2 center">
+                        <i id="next-song" class="fa fa-arrow-circle-o-right fa-4x" aria-hidden="true"></i> <br/>Next song
+                    </div>
+                </div>
+
+
                 <form id="image-holder" method="POST" action="/wishes/submit" enctype="multipart/form-data">
 
                     <input type="hidden" name="person_name" value=<%=person_name %>>
-                    <input type="hidden" name="audio_url" value="asdfadsf">
+
+                    <input name="audio_url" type="text" value="/audio/BirthDaySong.mp3" style="display:none">
 
                     <div class="row">
                         <div class="col-md-2 center">
@@ -36,8 +51,9 @@
                         </div>
                         <div class="col-md-8">
                             <div class="center photo-area">
-                                <br/> Choose a card or use one of ours: &emsp;
-                                <input type="file" id='getval' name="background_image">
+                                <br/> Choose a card: &emsp;
+                                <!--<input type="file" id='getval' name="background_image">-->
+                                <input type="text" id='getval' name="background_image" value="/images/card1.jpg" style="display:none">
                                 <br/><br/>
                             </div>
                         </div>
@@ -116,7 +132,7 @@
                     <br/><br/>
                     <div class="center">
                         <button type="submit" class="btnCustom">Submit</button>
-                        <button class="btnCustom ">Reset</button>
+                        <!--                     <button class="btnCustom ">Reset</button>-->
                     </div>
 
                     <!--BirthDay Wishes Ends-->
