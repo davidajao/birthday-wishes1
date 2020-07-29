@@ -10,7 +10,7 @@ router.get('/form', function(req, res, next) {
 
 //show user the form
 router.get('/completed', function(req, res, next) {
-    res.render('completedCard')
+    res.render('completedCard', { person_name: req.query.person_name })
 });
 
 router.get('/show', function(req, res, next) {
