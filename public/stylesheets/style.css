@@ -1,0 +1,276 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'Black Han Sans';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    clear: both;
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+blockquote {
+    margin: 0 1.5em;
+}
+
+address {
+    margin: 0 0 1.5em;
+}
+
+pre {
+    background: #eee;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+    font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+    border-bottom: 1px dotted #666;
+    cursor: help;
+}
+
+mark,
+ins {
+    background: #fff9c0;
+    text-decoration: none;
+}
+
+sup,
+sub {
+    font-size: 75%;
+    height: 0;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    bottom: 1ex;
+}
+
+sub {
+    top: .5ex;
+}
+
+small {
+    font-size: 75%;
+}
+
+big {
+    font-size: 125%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.masthead {
+    padding: 1em 2em;
+    background-color: #0D1B2E;
+    color: white;
+}
+
+.masthead h1 {
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+.intro {
+    font-family: 'Black Han Sans';
+    text-align: center;
+    padding: 2em 2em;
+    color: #ffffff;
+    font-size: 15px;
+    background: #429890;
+}
+
+.intro p,
+.test-area {
+    margin: 0 auto;
+    max-width: 550px;
+    position: relative;
+}
+
+.test-area {
+    margin-bottom: 4em;
+    padding: 0 2em;
+}
+
+.test-wrapper {
+    border: 10px solid grey;
+    border-radius: 10px;
+}
+
+.photo-area {
+    background-color: #d6f0fd;
+    border-radius: 10px;
+}
+
+.test-wrapper {
+    height: 200%;
+    display: flex;
+}
+
+.test-wrapper textarea {
+    flex: 1;
+}
+
+.timer {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#getval {
+    font-weight: bold;
+    color: #000058;
+    background: white;
+    border: 1px solid #000058;
+}
+
+.btnCustom {
+    font-weight: bold;
+    color: #000058;
+    background: white;
+    border: 2px solid #000058;
+}
+
+.btnCustom:hover {
+    color: white;
+    background-color: #000058;
+}
+
+.cloud {
+    width: 350px;
+    height: 120px;
+    background: #f2f9fe;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    position: relative;
+    margin: 120px auto 20px;
+    cursor: move;
+}
+
+.cloud:after,
+.cloud:before {
+    content: '';
+    position: absolute;
+    background: #f2f9fe;
+    z-index: -1;
+}
+
+.cloud:after {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: 50px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+}
+
+.cloud:before {
+    width: 180px;
+    height: 180px;
+    top: -90px;
+    right: 50px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+}
+
+.shadow {
+    width: 350px;
+    position: absolute;
+    bottom: -10px;
+    background: #000;
+    z-index: -1;
+    box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.textcloud {
+    margin-left: 60px;
+    height: 120px;
+    margin-top: -10px;
+    width: 230px;
+    border: none;
+    background: #f2f9fe;
+}
+
+#image-holder {
+    background-image: url('/images/card1.jpg');
+    background-size: auto;
+    background-position: center;
+    border: none;
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    min-height: 600px;
+}

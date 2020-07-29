@@ -1,0 +1,116 @@
+<!-- views/pages/index.ejs -->
+
+<%- include ('./partials/head') %>
+
+    <body class="container">
+
+        <header class="masthead">
+            <h1>BirthDay Wishes!!</h1>
+        </header>
+        <main class="main">
+
+            <article class="intro">
+                from your team-mates :)</p><br>
+            </article>
+            <!-- .intro -->
+
+            <section class="container">
+
+                <div class="timer center">12:05:00</div>
+
+                <form id="image-holder" method="POST" action="/wishes">
+
+
+                    <div class="row">
+                        <div class="col-md-2 center">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="center">
+                                <audio controls>
+                                    <source src="/audio/BirthdaySong.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="col-md-2 center">
+                        </div>
+                    </div>
+
+
+                    <div class="container">
+                        <!--ROW 1-->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="cloud">
+                                    <textarea class="textcloud" name="wish1" rows="6" placeholder="Write Your Wishes for Birthday guy!"></textarea>
+                                    <span class='shadow'> </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <div class="cloud">
+                                    <textarea class="textcloud" name="wish2" rows="6" placeholder="Write Your Wishes for Birthday guy!"></textarea>
+                                    <span class='shadow'> </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--ROW 2-->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="cloud">
+                                    <textarea class="textcloud" name="wish3" rows="6" placeholder="Write Your Wishes for Birthday guy!"></textarea>
+                                    <span class='shadow'> </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <div class="cloud">
+                                    <textarea class="textcloud" name="wish4" rows="6" placeholder="Write Your Wishes for Birthday guy!"></textarea>
+                                    <span class='shadow'> </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--ROW 3-->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="cloud">
+                                    <textarea class="textcloud" name="wish5" rows="6" placeholder="Write Your Wishes for Birthday guy!"></textarea>
+                                    <span class='shadow'> </span>
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <div class="cloud">
+                                    <textarea class="textcloud" name="wish6" rows="6" placeholder="Write Your Wishes for Birthday guy!"></textarea>
+                                    <span class='shadow'> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--ROW 4-->
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div class="cloud">
+                                <textarea class="textcloud" name="wish7" rows="6" placeholder="Write Your Wishes for Birthday guy!"></textarea>
+                                <span class='shadow'> </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    </div>
+
+                    <br/><br/>
+
+
+                    <!--BirthDay Wishes Ends-->
+                </form>
+            </section>
+            <!-- .test-area -->
+
+
+
+            <%- include ('./partials/footer') %>
+    </body>
