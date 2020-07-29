@@ -8,7 +8,7 @@ const port = 4000;
 const db = require('./db');
 const fileUpload = require('express-fileupload')
 
-var indexRouter = require('./routes/index');
+var indexRouter = require('./routes/wishes/form');
 var usersRouter = require('./routes/users');
 var wishesRouter = require('./routes/wishes');
 
@@ -30,7 +30,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+//app.use('/users', usersRouter);
 app.use('/wishes', wishesRouter);
 
 

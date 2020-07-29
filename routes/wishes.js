@@ -43,8 +43,6 @@ router.post('/submit', function(req, res, next) {
     const image_url = req.body.background_image;
     const wishes = [req.body.wish1, req.body.wish2, req.body.wish3, req.body.wish4, req.body.wish5, req.body.wish6, req.body.wish7]
 
-    console.log("YOOOOO" + req.body.audio_url)
-
 
     var newWish = new Wish({
         person_name: person_name,
